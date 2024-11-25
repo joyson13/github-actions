@@ -8,6 +8,10 @@ rules:
   addLabels: ['enhancement']
 - contains: enpm611
   assign: ['enpm611']
+- contains: maybe
+  assign: ['question']
+- contains: urgent
+  addAssignees: author
 
 # List that always runs after rules and nomatches. Look for missing sets of tags here.
 tags:
