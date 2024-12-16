@@ -1,13 +1,9 @@
 # list of primary rules
 rules:
-# - contains: question
-#   addLabels: ['question']
 - contains: bug
   addLabels: ['bug']
 - contains: feature
   addLabels: ['enhancement']
-# - contains: enpm611
-#   assign: ['enpm611']
 - contains: maybe
   assign: ['question']
 - contains: urgent
@@ -15,5 +11,5 @@ rules:
 
 # List that always runs after rules and nomatches. Look for missing sets of tags here.
 # tags:
-# - noneIn: ['bug', 'enhancement', 'question'] # If no bug, enhancement, or question labels are added, label with 'triage'
-#   addLabels: ['invalid']
+- noneIn: ['bug', 'enhancement', 'question'] # If no bug, enhancement, or question labels are added, label with 'triage'
+  addLabels: ['invalid']
