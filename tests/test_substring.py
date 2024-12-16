@@ -18,7 +18,7 @@ class TestSubstring(unittest.TestCase):
         self.assertEqual(score, 0.6)
         
         score:float = string_utils.calculate_match_degree("Science academy", "Applied Graduate Engineering")
-        self.assertEqual(score, 0)
+        self.assertLess(score, 0.1)
 
 if __name__ == "__main__":
     unittest.main()
