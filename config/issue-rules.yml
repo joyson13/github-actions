@@ -5,7 +5,7 @@ rules:
 - contains: feature
   addLabels: ['enhancement']
 - contains: maybe
-  assign: ['question']
+  addLabels: ['question']
 - contains: urgent
   assign: ['joyson13']
 
